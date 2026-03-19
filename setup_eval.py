@@ -1,7 +1,21 @@
 import os
 import random
-from datasets import load_dataset
+from pathlib import Path
+
+from datasets import load_dataset, concatenate_datasets
 from langsmith import Client
+
+# Load .env file if it exists
+_env_path = Path(__file__).resolve().parent / ".env"
+if _env_path.exists():
+    with open(_env_path) as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, _, val = line.partition("=")
+                key, val = key.strip(), val.strip().strip('"\'')
+                if key and val:
+                    os.environ.setdefault(key, val)
 
 # Initialize LangSmith client
 # Requires LANGCHAIN_API_KEY environment variable to be set
@@ -29,7 +43,14 @@ def get_gsm8k_samples(n=166):
 
 def get_math_samples(n=166):
     print("Loading MATH benchmark...")
-    ds = load_dataset("hendrycks/competition_math", split="test")
+    # Use EleutherAI mirror (original hendrycks/competition_math was DMCA-removed)
+    # Dataset has per-subject configs; load all and concatenate for a mixed test set
+    configs = [
+        "algebra", "counting_and_probability", "geometry", "intermediate_algebra",
+        "number_theory", "prealgebra", "precalculus",
+    ]
+    parts = [load_dataset("EleutherAI/hendrycks_math", cfg, split="test") for cfg in configs]
+    ds = concatenate_datasets(parts)
     ds = ds.shuffle(seed=42).select(range(n))
     
     samples = []
