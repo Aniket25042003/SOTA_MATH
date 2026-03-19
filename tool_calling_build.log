@@ -1,0 +1,159 @@
+[2026-03-11 16:41:19] ======================================================================
+[2026-03-11 16:41:19] PHASE 4: TOOL-CALLING DATASET BUILDER
+[2026-03-11 16:41:19] Azure AI Phi-4-mini-instruct | Multi-turn conversations
+[2026-03-11 16:41:19] ======================================================================
+[2026-03-11 16:57:12] ======================================================================
+[2026-03-11 16:57:12] PHASE 4: TOOL-CALLING DATASET BUILDER
+[2026-03-11 16:57:12] Azure AI Phi-4-mini-instruct | Multi-turn conversations
+[2026-03-11 16:57:12] ======================================================================
+[2026-03-11 16:57:14] ERROR: Cannot connect to Azure OpenAI: Connection error.
+[2026-03-11 16:57:55] ======================================================================
+[2026-03-11 16:57:55] PHASE 4: TOOL-CALLING DATASET BUILDER
+[2026-03-11 16:57:55] Azure AI Phi-4-mini-instruct | Multi-turn conversations
+[2026-03-11 16:57:55] ======================================================================
+[2026-03-11 16:57:56] Azure OpenAI connected: ok
+[2026-03-11 16:57:56] Progress: {'completed_categories': {}, 'total_written': 0}
+[2026-03-11 16:57:56] 
+==================================================
+[2026-03-11 16:57:56] CATEGORY: arithmetic (target: 1600)
+[2026-03-11 16:57:56] ==================================================
+[2026-03-11 17:02:25]   arithmetic: 146/1600 written, 4 failed (269s, 32.6/min)
+[2026-03-11 17:06:55]   arithmetic: 285/1600 written, 15 failed (539s, 31.7/min)
+[2026-03-11 17:10:23] ======================================================================
+[2026-03-11 17:10:23] PHASE 4: TOOL-CALLING DATASET BUILDER
+[2026-03-11 17:10:23] Azure AI Phi-4-mini-instruct | Multi-turn conversations
+[2026-03-11 17:10:23] ======================================================================
+[2026-03-11 17:10:23] Azure OpenAI connected: ok
+[2026-03-11 17:10:23] Progress: {'completed_categories': {}, 'total_written': 0}
+[2026-03-11 17:10:23] 
+==================================================
+[2026-03-11 17:10:23] CATEGORY: arithmetic (target: 1600)
+[2026-03-11 17:10:23] ==================================================
+[2026-03-11 17:13:54] ======================================================================
+[2026-03-11 17:13:54] PHASE 4: TOOL-CALLING DATASET BUILDER
+[2026-03-11 17:13:54] Azure AI Phi-4-mini-instruct | Multi-turn conversations
+[2026-03-11 17:13:54] ======================================================================
+[2026-03-11 17:13:55] Azure OpenAI connected: ok
+[2026-03-11 17:13:55] Progress: {'completed_categories': {}, 'total_written': 0}
+[2026-03-11 17:13:55] 
+==================================================
+[2026-03-11 17:13:55] CATEGORY: arithmetic (target: 1600)
+[2026-03-11 17:13:55] ==================================================
+[2026-03-11 17:20:24]   arithmetic: 148/1600 written, 2 failed (390s, 22.8/min)
+[2026-03-11 17:26:53]   arithmetic: 296/1600 written, 4 failed (778s, 22.8/min)
+[2026-03-11 17:35:39]   arithmetic: 444/1600 written, 6 failed (1304s, 20.4/min)
+[2026-03-11 17:44:09]   arithmetic: 594/1600 written, 6 failed (1814s, 19.6/min)
+[2026-03-11 17:52:24]   arithmetic: 741/1600 written, 9 failed (2309s, 19.3/min)
+[2026-03-11 18:00:09]   arithmetic: 890/1600 written, 10 failed (2775s, 19.2/min)
+[2026-03-11 18:06:07]   arithmetic: 1034/1600 written, 16 failed (3132s, 19.8/min)
+[2026-03-11 18:12:05]   arithmetic: 1183/1600 written, 17 failed (3490s, 20.3/min)
+[2026-03-11 18:18:25]   arithmetic: 1332/1600 written, 18 failed (3871s, 20.6/min)
+[2026-03-11 18:24:45]   arithmetic: 1481/1600 written, 19 failed (4250s, 20.9/min)
+[2026-03-11 18:30:17]   arithmetic: 1600/1600 written, 20 failed (4583s, 20.9/min)
+[2026-03-11 18:30:17]   arithmetic COMPLETE: 1600 written, 20 failed
+[2026-03-11 18:30:17] 
+==================================================
+[2026-03-11 18:30:17] CATEGORY: verification (target: 1200)
+[2026-03-11 18:30:17] ==================================================
+[2026-03-11 18:39:55]   verification: 149/1200 written, 1 failed (578s, 15.5/min)
+[2026-03-11 18:46:02]   verification: 296/1200 written, 4 failed (944s, 18.8/min)
+[2026-03-11 18:52:32]   verification: 444/1200 written, 6 failed (1334s, 20.0/min)
+[2026-03-11 18:59:22]   verification: 594/1200 written, 6 failed (1744s, 20.4/min)
+[2026-03-11 19:06:18]   verification: 743/1200 written, 7 failed (2160s, 20.6/min)
+[2026-03-11 19:16:03]   verification: 893/1200 written, 7 failed (2746s, 19.5/min)
+[2026-03-11 19:22:19]   verification: 1041/1200 written, 9 failed (3122s, 20.0/min)
+[2026-03-11 19:28:39]   verification: 1189/1200 written, 11 failed (3502s, 20.4/min)
+[2026-03-11 19:29:10]   verification: 1200/1200 written, 11 failed (3532s, 20.4/min)
+[2026-03-11 19:29:10]   verification COMPLETE: 1200 written, 11 failed
+[2026-03-11 19:29:10] 
+==================================================
+[2026-03-11 19:29:10] CATEGORY: cheatsheet_lookup (target: 1200)
+[2026-03-11 19:29:10] ==================================================
+[2026-03-11 19:36:07]   cheatsheet_lookup: 143/1200 written, 7 failed (418s, 20.5/min)
+[2026-03-11 19:49:17]   cheatsheet_lookup: 288/1200 written, 12 failed (1207s, 14.3/min)
+[2026-03-11 19:58:26]   cheatsheet_lookup: 430/1200 written, 20 failed (1757s, 14.7/min)
+[2026-03-11 20:05:01]   cheatsheet_lookup: 573/1200 written, 27 failed (2152s, 16.0/min)
+[2026-03-11 20:11:09]   cheatsheet_lookup: 713/1200 written, 37 failed (2519s, 17.0/min)
+[2026-03-11 20:18:11]   cheatsheet_lookup: 857/1200 written, 43 failed (2942s, 17.5/min)
+[2026-03-11 20:25:41]   cheatsheet_lookup: 1000/1200 written, 50 failed (3391s, 17.7/min)
+[2026-03-11 20:33:49]   cheatsheet_lookup: 1142/1200 written, 58 failed (3880s, 17.7/min)
+[2026-03-11 20:37:58]   cheatsheet_lookup: 1200/1200 written, 59 failed (4128s, 17.4/min)
+[2026-03-11 20:37:58]   cheatsheet_lookup COMPLETE: 1200 written, 59 failed
+[2026-03-11 20:37:58] 
+==================================================
+[2026-03-11 20:37:58] CATEGORY: multi_tool (target: 1600)
+[2026-03-11 20:37:58] ==================================================
+[2026-03-11 20:58:10]   multi_tool: 138/1600 written, 12 failed (1213s, 6.8/min)
+[2026-03-11 21:06:59]   multi_tool: 277/1600 written, 23 failed (1742s, 9.5/min)
+[2026-03-11 21:15:10]   multi_tool: 415/1600 written, 35 failed (2232s, 11.2/min)
+[2026-03-11 21:23:43]   multi_tool: 552/1600 written, 48 failed (2745s, 12.1/min)
+[2026-03-11 21:36:56]   multi_tool: 691/1600 written, 59 failed (3538s, 11.7/min)
+[2026-03-11 21:45:30]   multi_tool: 833/1600 written, 67 failed (4052s, 12.3/min)
+[2026-03-11 21:59:10]   multi_tool: 975/1600 written, 75 failed (4872s, 12.0/min)
+[2026-03-11 22:12:53]   multi_tool: 1114/1600 written, 86 failed (5695s, 11.7/min)
+[2026-03-11 22:21:45]   multi_tool: 1251/1600 written, 99 failed (6227s, 12.1/min)
+[2026-03-11 22:38:38]   multi_tool: 1390/1600 written, 110 failed (7240s, 11.5/min)
+[2026-03-11 22:46:40]   multi_tool: 1525/1600 written, 125 failed (7722s, 11.8/min)
+[2026-03-11 22:51:23]   multi_tool: 1600/1600 written, 133 failed (8006s, 12.0/min)
+[2026-03-11 22:51:23]   multi_tool COMPLETE: 1600 written, 133 failed
+[2026-03-11 22:51:23] 
+==================================================
+[2026-03-11 22:51:23] CATEGORY: no_tool (target: 2400)
+[2026-03-11 22:51:23] ==================================================
+[2026-03-11 22:54:39]   no_tool: 150/2400 written, 0 failed (196s, 46.0/min)
+[2026-03-11 22:57:52]   no_tool: 300/2400 written, 0 failed (389s, 46.3/min)
+[2026-03-11 23:01:07]   no_tool: 450/2400 written, 0 failed (584s, 46.2/min)
+[2026-03-11 23:04:40]   no_tool: 600/2400 written, 0 failed (796s, 45.2/min)
+[2026-03-11 23:12:17]   no_tool: 750/2400 written, 0 failed (1253s, 35.9/min)
+[2026-03-11 23:15:40]   no_tool: 900/2400 written, 0 failed (1457s, 37.1/min)
+[2026-03-11 23:18:50]   no_tool: 1050/2400 written, 0 failed (1646s, 38.3/min)
+[2026-03-11 23:21:57]   no_tool: 1200/2400 written, 0 failed (1834s, 39.3/min)
+[2026-03-11 23:25:07]   no_tool: 1350/2400 written, 0 failed (2024s, 40.0/min)
+[2026-03-11 23:28:24]   no_tool: 1500/2400 written, 0 failed (2220s, 40.5/min)
+[2026-03-11 23:31:42]   no_tool: 1650/2400 written, 0 failed (2419s, 40.9/min)
+[2026-03-11 23:34:57]   no_tool: 1800/2400 written, 0 failed (2613s, 41.3/min)
+[2026-03-11 23:38:14]   no_tool: 1950/2400 written, 0 failed (2811s, 41.6/min)
+[2026-03-11 23:41:40]   no_tool: 2100/2400 written, 0 failed (3017s, 41.8/min)
+[2026-03-11 23:45:12]   no_tool: 2250/2400 written, 0 failed (3229s, 41.8/min)
+[2026-03-11 23:48:42]   no_tool: 2400/2400 written, 0 failed (3439s, 41.9/min)
+[2026-03-11 23:48:42]   no_tool COMPLETE: 2400 written, 0 failed
+[2026-03-11 23:48:42] 
+==================================================
+[2026-03-11 23:48:42] CATEGORY: multi_step_calc (target: 1000)
+[2026-03-11 23:48:42] ==================================================
+[2026-03-11 23:58:15]   multi_step_calc: 148/1000 written, 2 failed (572s, 15.5/min)
+[2026-03-12 00:08:03]   multi_step_calc: 294/1000 written, 6 failed (1160s, 15.2/min)
+[2026-03-12 00:20:59]   multi_step_calc: 442/1000 written, 8 failed (1937s, 13.7/min)
+[2026-03-12 00:28:38]   multi_step_calc: 591/1000 written, 9 failed (2396s, 14.8/min)
+[2026-03-12 00:36:08]   multi_step_calc: 738/1000 written, 12 failed (2845s, 15.6/min)
+[2026-03-12 00:43:39]   multi_step_calc: 885/1000 written, 15 failed (3297s, 16.1/min)
+[2026-03-12 00:49:39]   multi_step_calc: 1000/1000 written, 18 failed (3657s, 16.4/min)
+[2026-03-12 00:49:39]   multi_step_calc COMPLETE: 1000 written, 18 failed
+[2026-03-12 00:49:39] 
+==================================================
+[2026-03-12 00:49:39] CATEGORY: formula_then_compute (target: 1000)
+[2026-03-12 00:49:39] ==================================================
+[2026-03-12 01:03:08]   formula_then_compute: 145/1000 written, 5 failed (809s, 10.8/min)
+[2026-03-12 01:17:17]   formula_then_compute: 290/1000 written, 10 failed (1659s, 10.5/min)
+[2026-03-12 01:25:15]   formula_then_compute: 432/1000 written, 18 failed (2136s, 12.1/min)
+[2026-03-12 01:33:29]   formula_then_compute: 569/1000 written, 31 failed (2630s, 13.0/min)
+[2026-03-12 01:41:57]   formula_then_compute: 711/1000 written, 39 failed (3138s, 13.6/min)
+[2026-03-12 01:51:26]   formula_then_compute: 854/1000 written, 46 failed (3707s, 13.8/min)
+[2026-03-12 02:02:01]   formula_then_compute: 994/1000 written, 56 failed (4342s, 13.7/min)
+[2026-03-12 02:02:33]   formula_then_compute: 1000/1000 written, 56 failed (4375s, 13.7/min)
+[2026-03-12 02:02:33]   formula_then_compute COMPLETE: 1000 written, 56 failed
+[2026-03-12 02:02:34] 
+======================================================================
+[2026-03-12 02:02:34] TOOL-CALLING DATASET BUILD COMPLETE!
+[2026-03-12 02:02:34]   Output: /Users/aniketpatel/Desktop/SOTA_MATH/tool_calling_dataset.jsonl
+[2026-03-12 02:02:34]   Total records: 10000
+[2026-03-12 02:02:34]     arithmetic: 1600
+[2026-03-12 02:02:34]     cheatsheet_lookup: 1200
+[2026-03-12 02:02:34]     formula_then_compute: 1000
+[2026-03-12 02:02:34]     multi_step_calc: 1000
+[2026-03-12 02:02:34]     multi_tool: 1600
+[2026-03-12 02:02:34]     no_tool: 2400
+[2026-03-12 02:02:34]     verification: 1200
+[2026-03-12 02:02:34]   Avg word count: 568
+[2026-03-12 02:02:34]   Min/Max: 214/2374
+[2026-03-12 02:02:34] ======================================================================
