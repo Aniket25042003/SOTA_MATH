@@ -1,0 +1,29 @@
+# SOTA_MATH — Llama 3.1 8B fine-tuned for mathematical reasoning
+# 4-phase training: general math → extended math → reasoning chains → tool calling
+
+FROM ./Meta-Llama-3.1-8B-Instruct.Q8_0.gguf
+
+# Math-optimized parameters: lower temperature for more deterministic, accurate answers
+PARAMETER temperature 0.3
+PARAMETER top_p 0.9
+PARAMETER num_ctx 4096
+
+# Llama 3.1 stop tokens — prevents model from generating new roles or continuing past EOT
+PARAMETER stop "<|start_header_id|>"
+PARAMETER stop "<|end_header_id|>"
+PARAMETER stop "<|eot_id|>"
+
+# Llama 3.1 chat template — matches the format used during training (llama-3.1 via Unsloth)
+TEMPLATE """{{ if .System }}<|start_header_id|>system<|end_header_id|>
+
+{{ .System }}<|eot_id|>{{ end }}{{ if .Prompt }}<|start_header_id|>user<|end_header_id|>
+
+{{ .Prompt }}<|eot_id|>{{ end }}<|start_header_id|>assistant<|end_header_id|>
+
+{{ .Response }}<|eot_id|>"""
+
+# System prompt aligned with Phase 3 reasoning training
+SYSTEM """You are a highly skilled math expert and reasoning specialist. For each problem:
+1. First, reason through the problem — identify what is being asked, what concepts apply, and outline your approach.
+2. Then, provide the detailed step-by-step solution.
+3. Finally, state the final answer clearly."""

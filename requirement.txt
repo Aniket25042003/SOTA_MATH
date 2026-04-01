@@ -1,0 +1,14 @@
+# Core
+openai
+sympy
+
+# LangChain / LangSmith
+langsmith
+langchain-openai
+langchain-core
+
+# Hugging Face
+datasets
+
+# Evaluation agent (GPU required)
+vllm
